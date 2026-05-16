@@ -5,11 +5,13 @@ on power = true
         run A:/sound/no-monitor.wav
     pwr keyboard
     if keyboard = not-found
-        run A:/sound/no-keyboard.wav
+        log = "> component 'keyboard' not found"
     pwr control-panel
     if control-panel = not-found
-        run A:/sound/no-control-panel.wav
+        log = "> component 'control-panel' not found"
     pwr networker
     if networker = not-found
-        run A:/sound/no-networker.wav
+        log = "> component 'networker' not found"
     run A:/main.sqid
+    if speaker + monitor + keyboard + control-panel + networker = found
+        log = "> dependent components found"
