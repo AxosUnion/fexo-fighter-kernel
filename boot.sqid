@@ -1,2 +1,15 @@
-on power = on
+on power = true
+    pwr speaker
+    pwr monitor
+    if monitor = not-found
+        run A:/sound/no-monitor.wav
+    pwr keyboard
+    if keyboard = not-found
+        run A:/sound/no-keyboard.wav
+    pwr control-panel
+    if control-panel = not-found
+        run A:/sound/no-control-panel.wav
+    pwr networker
+    if networker = not-found
+        run A:/sound/no-networker.wav
     run A:/main.sqid
