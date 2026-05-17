@@ -14,4 +14,6 @@ on power = true
         log = "> component 'networker' not found"
     run A:/main.sqid
     if speaker + monitor + keyboard + control-panel + networker = found
-        log = "> dependent components found"
+        log = "> required components found"
+    else
+        log = "> required components not found"
