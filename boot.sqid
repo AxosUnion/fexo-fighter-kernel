@@ -12,7 +12,7 @@ on power = true
     pwr networker
     if networker = not-found
         log = "> component 'networker' not found"
-    run A:/main.sqid
+    run A:/network-control.sqid
     if speaker + monitor + keyboard + control-panel + networker = found
         log = "> required components found"
     else
