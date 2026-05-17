@@ -1,0 +1,8 @@
+loop
+    if networker-output < 7 ax
+        set networker-output {networker-output}
+        run {networker-output} audio
+        log = "> signal detected"
+    else
+        set networker-output {networker-output}
+        kill {networker-output} audio
