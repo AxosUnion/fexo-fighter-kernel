@@ -6,6 +6,7 @@ on power = true
     pwr keyboard
     if keyboard = not-found
         log = "> component 'keyboard' not found"
+    run A:/keyboard-control.sqid
     pwr control-panel
     if control-panel = not-found
         log = "> component 'control-panel' not found"
