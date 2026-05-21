@@ -1,0 +1,13 @@
+loop
+    on keyboard output a = 1
+        set command {command}+a
+    on keyboard output b = 1
+        set command {command}+b
+    on keyboard output c = 1
+        set command {command}+c
+    on keyboard output d = 1
+        set command {command}+d
+    on keyboard output e = 1
+        set command {command}+e
+    on keyboard output f = 1
+        set command {command}+f
